@@ -1,0 +1,135 @@
+body#main_body {
+	position: relative;
+	min-height: 100vh;
+	margin: 0;
+	background-color: white;
+}
+
+#main-content {
+	background-color: white;
+	margin: -155px 0 0 0;
+    padding: 35px 0 140px 0;
+}
+
+#main-content * {
+	padding-left:0;
+	padding-right:0;
+	margin-left:0;
+	margin-right:0;
+}
+/* Header content */
+
+.open-line {
+	height: 40px;
+	background-color: black;
+	position: fixed;
+	z-index: -999;
+	padding: 0;
+}
+
+.content-after-menu {
+	height: 50px;
+	background-color: white;
+}
+
+/* Main content */
+
+.featured-article {
+	height: 500px;
+	background-color: transparent;
+	width: 100%;
+	position: relative;
+}
+
+.featured-image-frame {
+	height: 100%;
+	width: auto;
+}
+
+.left-article .featured-image-frame {
+	float: right;
+}
+
+.right-article .featured-image-frame {
+	float: left;
+}
+
+img.attachment-post-thumbnail {
+	height: 580px;
+	width: auto;
+	margin-top: -40px;
+}
+
+.f-article-text-frame {
+	box-sizing: border-box;
+	height: 100%;
+	width: 70%;
+	color: white;
+	position: absolute;
+	background: #6c777a;
+	z-index: 88;
+}
+
+.left-article .f-article-text-frame {
+	left: 0;
+	clip-path: polygon(0 5%, 100% 0%, 95% 100%, 0 95%);
+}
+
+.right-article .f-article-text-frame {
+	right: 0;
+	clip-path: polygon(0 0, 100% 5%, 100% 95%, 5% 100%);
+}
+
+.f-article-text-content {
+	position: absolute;
+	width: 70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	box-sizing: border-box;
+}
+
+/* Footer content */
+
+footer {
+	clear: both;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	box-sizing: border-box;
+	height: 150px;
+	width: 100%;
+	color: white;
+	float: right;
+
+}
+
+.footer-frame {
+	display: block;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	color: white;
+	background: #333;
+}
+
+.footer-content {
+	display: block;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+.footer-right .footer-frame {
+	clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+}
+
+.footer-left .footer-frame {
+	clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+}
